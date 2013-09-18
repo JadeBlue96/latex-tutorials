@@ -3,3 +3,4 @@ markdown: rdiscount
 pygments: true
 
 baseurl: /latex-tutorials
+include: .htaccess

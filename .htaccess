@@ -1,0 +1,10 @@
+# URL redirects for local development
+# Github pages will ignore this .htaccess file. But it does 
+# support clean extensionless URLs.
+<Directory "/_site">
+    # Turn on Apache mod_rewrite
+    RewriteEngine On
+
+    # Friendly URLs with no trailing slash
+    RewriteRule ^([^.]+)$ $1.html
+</Directory>
