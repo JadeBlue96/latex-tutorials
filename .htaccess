@@ -6,9 +6,5 @@
 RewriteEngine On
 
 # Friendly URLs with no trailing slash
-RewriteCond %{HTTP_HOST} ^localhost:4000$ [NC]
-RewriteCond %{REQUEST_URI} !^/_site/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /_site/$1/
-#RewriteRule ^([^.]+)/$ $1.html
+RewriteRule ^([^.]+)/$ $1/index.html 
+RewriteRule ^([^.]+)$ $1.html
