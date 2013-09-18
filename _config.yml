@@ -4,3 +4,4 @@ pygments: true
 
 baseurl: "/latex-tutorials"
 include: [".htaccess"]
+exclude: ["README.md"]
