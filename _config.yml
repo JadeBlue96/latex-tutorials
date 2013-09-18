@@ -1,6 +1,6 @@
-name: LaTeX Tutorials
+name: "LaTeX Tutorials"
 markdown: rdiscount
 pygments: true
 
-baseurl: /latex-tutorials
-include: .htaccess
+baseurl: "/latex-tutorials"
+include: [".htaccess"]
