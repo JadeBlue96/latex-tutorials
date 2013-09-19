@@ -18,32 +18,40 @@ Download all the files present on that page, and place them in the same director
 
 Back in your LaTeX document, add the following in the header
 
-	\usepackage[T1]{fontenc}
-	\usepackage{font}
+{% highlight latex %}
+\usepackage[T1]{fontenc}
+\usepackage{font}
+{% endhighlight %}
 
 where `font` is replaced by the shortname for your chosen font. In our case, this is `la`.
 
 To use this new font in the text environment, precede text with `\lanormal`. For example
 	
-	{\lanormal This text will now use Lateinische Ausgangsschrift}
+{% highlight latex %}
+{\lanormal This text will now use Lateinische Ausgangsschrift}
+{% endhighlight %}
 
 To return back to Computer Modern Roman, the default font, use
 
-	\normalfont
+{% highlight latex %}
+\normalfont
+{% endhighlight %}	
 
 Note that the command `\lanormal` is specific to our example font. You will have to find out which commands have been allocated to your own chosen font. To find out, open up the file `font.sty`, where `font` is replaced with the shortname of your chosen font. In here, you will see a bunch of `\newcommand{}{}` statements. These new commands define the new fonts you can use. Most should be just different sizes and variations.
 
 In our case, we have
 
-	\lanormalsize
-	\lalarge
-	\laLarge
-	\laLARGE
-	\lahuge
-	\laHuge
-	\llanormalsize
-	\llalarge
-	\llaLarge
-	\llaLARGE
-	\llahuge
-	\llaHuge
+{% highlight latex %}
+\lanormalsize
+\lalarge
+\laLarge
+\laLARGE
+\lahuge
+\laHuge
+\llanormalsize
+\llalarge
+\llaLarge
+\llaLARGE
+\llahuge
+\llaHuge
+{% endhighlight %}

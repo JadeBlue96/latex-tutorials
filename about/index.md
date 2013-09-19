@@ -49,7 +49,7 @@ The current site is built on the following:
 	<p>The only person who uses Windows, and knows almost everything about LaTeX.</p>
 </div>
 
-We all studied at the [University of Warwick](http://www2.warwick.ac.uk/) for an undergraduate degree in Mathematics. During that time, we got involved with the [Warwick Maths Society](http://warwickmaths.org) through various roles. Every year, one such role was to hold LaTeX classes for new undergraduates. We soon realised that even though they grasped the basics of LaTeX, many did not know how to take their new found knowledge to the next level.
+All three of us studied at the [University of Warwick](http://www2.warwick.ac.uk/) for an undergraduate degree in Mathematics. During that time, we got involved with the [Warwick Maths Society](http://warwickmaths.org) through various roles. Every year, one such role was to hold LaTeX classes for new undergraduates. We soon realised that even though they grasped the basics of LaTeX, many did not know how to take their new found knowledge to the next level.
 
 Though this website was initially used in these classes as a teaching aid, we hope that it will encourage anyone learning LaTeX to continue practicing and discover the powerful capabilities LaTeX provides. 
 

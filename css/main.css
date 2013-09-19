@@ -110,6 +110,39 @@ pre {
   padding: 10px;
   background: rgba(0,0,0,0.05);
   border: 1px solid #ccc;
-  word-wrap: break-word;
   line-height: 1.5em;
+
+  width: 728px; /* 750 - 10 - 10 - 1 - 1 = 728 */
+  display: inline-block;
+}
+
+pre, code {
+  font-family: "Source Code Pro", sans-serif;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dt:after {
+  content: ":";
+}
+
+table {
+  display: inline-block;
+  width: 750px;
+}
+
+dd table {
+  width: 710px;
+}
+
+tbody tr:nth-of-type(odd) {
+  background: rgba(0,0,0,0.05);
+}
+
+th, td {
+  vertical-align: top;
+  padding: 0.75em;
+  border: 1px solid #ccc;
 }
