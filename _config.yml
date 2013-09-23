@@ -6,4 +6,5 @@ baseurl: "/latex-tutorials"
 permalink: /:categories/:title
 
 include: [".htaccess"]
-exclude: ["README.md"]
+exclude: ["README.md","deploy"]
+
