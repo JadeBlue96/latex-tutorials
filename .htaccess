@@ -8,3 +8,6 @@ RewriteEngine On
 # Friendly URLs with no trailing slash
 RewriteRule ^([^.]+)/$ $1/index.html 
 RewriteRule ^([^.]+)$ $1.html
+
+# 404 page
+ErrorDocument 404 /404.html
