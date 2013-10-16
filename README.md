@@ -35,6 +35,6 @@ If you want to give extra tips, particularly if a more semantic symbol exists, t
 	  - Use \sqrt{} (with curly braces) to place muliple items under the square-root symbol.
 	---
 	
-	$$ x = \frac{b \pm sqrt{b^2 - 4ac}}{2a} $$
+	$$ x = \frac{-b \pm sqrt{b^2 - 4ac}}{2a} $$
 	
 Feel free to add as many as you like, or correct existing ones.
