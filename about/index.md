@@ -29,8 +29,7 @@ The current site is built on the following:
 
 - [Jekyll](http://jekyllrb.com/)
 - [Pure CSS](http://purecss.io)
-- [QuickLaTeX](http://www.quicklatex.com/) for rendering static LaTeX
-- [CodeCogs equation renderer](http://www.codecogs.com/) for live previews
+- [MathJax](http://www.mathjax.org/)
 
 ### The Editors
 
