@@ -1,0 +1,53 @@
+{% include header.html %}
+
+    <section class="pure-g">
+      <div class="pure-u-1-2">
+        <h3>{{ page.title }}</h3>
+
+        <form class="pure-form">
+          <fieldset>
+            <textarea class="pure-input-1 latex-input" id="latex-source"></textarea>
+          </fieldset>
+
+          <button class="pure-button pure-input-1-3" id="compile">Compile</button>
+          <button class="pure-button pure-input-1-3" id="toggle-answer">View answer</button>
+          <button class="pure-button pure-input-1-3" id="new-equation">New equation</button>
+
+          <fieldset>
+            <textarea class="pure-input-1 latex-input" id="latex-answer"></textarea>
+          </fieldset>
+        </form>
+
+        <h4>Tips</h4>
+        <ul>
+          <li>Use the <code>&lt;tab&gt;</code> key to organise your code.</li>
+          <li>Don't know a symbol? Try <a href="http://detexify.kirelabs.org/" target="_blank" title="Visit Detexify website">Detexify</a>, or links in the <a href="{{ site.baseurl }}/documentation/resources" target="_blank">Resources</a> page.</li>
+          {% if page.tips %}
+            {% for tip in page.tips %}
+              <li>{{ tip }}</li>
+            {% endfor %}
+          {% endif %}
+        </ul>
+      </div>
+
+      <div id="latex-preview" class="pure-u-1-2">
+        <h3>Preview</h3>
+          {{ content }}
+        <hr>
+        <div id="math"></div>
+      </div>
+    </section>
+
+{% include mathjax.html %}
+
+<script type="text/javascript" src="{{ site.baseurl }}/js/practice.js"></script>
+<script type="text/javascript">
+  var eqns = [];
+  {% for pg in site.pages %}
+    {% if page.difficulty == pg.difficulty %} eqns.push("{{ pg.url | remove: '.html' }}"); {% endif %}
+  {% endfor %}
+
+  practice.init(eqns,"{{ site.baseurl }}");
+</script>
+
+{% include footer.html %}

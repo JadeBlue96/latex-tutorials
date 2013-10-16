@@ -1,10 +1,10 @@
 name: "LaTeX Tutorials"
-markdown: rdiscount
+markdown: kramdown 
 pygments: true
 
 baseurl: "/latex-tutorials"
 permalink: /:categories/:title
 
 include: [".htaccess"]
-exclude: ["README.md","deploy"]
+exclude: ["README.md","deploy","neweqn"]
 

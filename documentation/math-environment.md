@@ -29,6 +29,10 @@ This environment will cumulatively number the equations so you can reference the
 \end{equation*}
 {% endhighlight %}
 
+$$ \begin{equation}
+  \phi(n)= n\prod_{\substack{p \text{ prime }\\ p|n}} \left( 1- \frac{1}{p}\right)
+  \end{equation} $$
+
 Next is the align environment. This is used for maths which spans over several lines and requires alignment to look neat and tidy (in some cases the alignment helps make the maths more clear). For example, long calculations with several steps. In the align environment, use an ampersand in front of what you want to align and a double backslash to define a new line. Here is an example
 
 {% highlight latex %}
@@ -37,6 +41,10 @@ Next is the align environment. This is used for maths which spans over several l
             &=  ab^2 + 2abc + ac^2
 \end{align}
 {% endhighlight %}
+
+$$ \begin{equation*}
+  \begin{cases} x\underset{m}{\equiv} a \\ x\underset{n}{\equiv} b \end{cases}
+  \end{equation*} $$
 
 So in the above example, the equals symbols will line up so the calculation steps are clear and easy to follow. Each line will be numbered cumulatively much like the equation environment. To prevent this, use the `align*` environment. 
 
@@ -47,6 +55,11 @@ So in the above example, the equals symbols will line up so the calculation step
 \end{align*}
 {% endhighlight %}
 
+$$ \begin{align*}
+  a(b+c)^2  &=  a(b^2 + 2bc + c^2)  \\
+              &=  ab^2 + 2abc + ac^2
+              \end{align*} $$
+
 You can align most symbols. Here is another example where we align the `\geq` symbol the equals symbol.
 
 {% highlight latex %}
@@ -55,6 +68,11 @@ You can align most symbols. Here is another example where we align the `\geq` sy
            &\geq  b^2 + c^2       \\
 \end{align*}
 {% endhighlight %}
+
+$$ \begin{align*}
+  (b+c)^2  &=     b^2 + 2bc + c^2 \\
+             &\geq  b^2 + c^2       \\
+             \end{align*} $$
 
 The align environment allows you to align multiple symbols in any line, though be sure to have the same number of ampersands in each line or your document will not compile. If you do this, you will likely want some of your alignments to be blank, to achieve this use `\quad`. This is a blank space in essence. It will not show up as anything and is a useful snippet of code to remember. This affect is hard to explain so here is an example
 
@@ -66,5 +84,12 @@ The align environment allows you to align multiple symbols in any line, though b
     &\quad &= g    \\
 \end{align*}
 {% endhighlight %}
+
+$$ \begin{align*}
+  a &= b   &\quad  \\
+      &= c   &= d    \\
+          &\quad &= e    \\
+              &\quad &= g    \\
+              \end{align*} $$
 
 As you can see this method of alignment is often tricky to get looking good so use it sparingly until you become more familiar with LaTeX, by which time you would have learnt to fix (or botch) the above code to make it more aesthetically pleasing.

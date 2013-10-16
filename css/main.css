@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   width: 960px;
   font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
 }
 
 .pure-g {
@@ -86,8 +87,9 @@ ul.numbered {
   resize: none;
 }
 
-.latex-preview {
-  /*text-align: center;*/
+#latex-answer {
+  display: none;
+  height: auto;
 }
 
 img.latex-equation,
@@ -95,6 +97,10 @@ img.latex-equation-preview {
   display: block;
   margin: 40px auto;
   max-width: 100%;
+}
+
+#latex-preview .MathJax_Display {
+  margin: 5em 0;
 }
 
 hr {                              /* http://css-tricks.com/simple-styles-for-horizontal-rules/ */

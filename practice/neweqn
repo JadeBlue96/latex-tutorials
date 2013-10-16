@@ -1,0 +1,34 @@
+#!/bin/bash
+
+case "$1" in 
+  b)
+    FILEDIR=beginner
+    ;;
+  i)
+    FILEDIR=intermediate
+    ;;
+  a)
+    FILEDIR=advanced
+    ;;
+  *)
+    echo $"Usage: $0 {b|i|a} eqntitle"
+    exit 1
+esac
+
+FILENAME="$(tr [A-Z] [a-z] <<< "$2")"
+FILENAME=${FILENAME// /-}
+TITLE=$2
+TITLE="$(tr '[:lower:]' '[:upper:]' <<< ${TITLE:0:1})${TITLE:1}"
+
+cat > $FILEDIR/$FILENAME.md << EOF
+---
+layout: practice 
+title: "$TITLE"
+base: practice
+difficulty: $FILEDIR
+---
+
+\$\$  \$\$
+EOF
+
+vim $FILEDIR/$FILENAME.md

@@ -1,0 +1,55 @@
+<aside class="pure-u-1-3">
+    <h3>Categories</h3>
+    <nav class="pure-menu pure-menu-open">
+      <ul>
+        <li><a href="{{ site.baseurl }}/practice">Introduction</a></li>
+        <li><a href="{{ site.baseurl }}/practice/beginner" id="b">Beginner</a></li>
+        <li><a href="{{ site.baseurl }}/practice/intermediate" id="i">Intermediate</a></li>
+        <li><a href="{{ site.baseurl }}/practice/advanced" id="a">Advanced</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+<script type="text/javascript">
+  // Attach event listeners
+  function addEvent(obj,type,fn) {
+    if(obj.addEventListener) {
+      obj.addEventListener(type,fn,false);
+    } else if(obj.attachEvent) {
+      obj.attachEvent('on' + type, function() { return fn.apply(obj, [window.event]);});
+    } else {
+      obj['on'+type] = fn;
+    }
+  }
+
+  var beqns = [], ieqns = [], aeqns = [];
+  {% for page in site.pages %}
+    {% if page.difficulty == 'beginner' %} beqns.push("{{ page.url | remove: '.html' }}"); {% endif %}
+    {% if page.difficulty == 'intermediate' %} ieqns.push("{{ page.url | remove: '.html' }}"); {% endif %}
+    {% if page.difficulty == 'advanced' %} aeqns.push("{{ page.url | remove: '.html' }}"); {% endif %}
+  {% endfor %}
+
+  addEvent(document.getElementById('b'),'click',function(e) {
+    window.location = "{{ site.baseurl }}" + beqns[Math.floor(Math.random() * beqns.length)];
+
+    e.returnValue = false;
+    if(e.preventValue) e.preventValue();
+    return false;
+  });
+
+  addEvent(document.getElementById('i'),'click',function(e) {
+    window.location = "{{ site.baseurl }}" + ieqns[Math.floor(Math.random() * ieqns.length)];
+
+    e.returnValue = false;
+    if(e.preventValue) e.preventValue();
+    return false;
+  });
+
+  addEvent(document.getElementById('a'),'click',function(e) {
+    window.location = "{{ site.baseurl }}" + aeqns[Math.floor(Math.random() * aeqns.length)];
+
+    e.returnValue = false;
+    if(e.preventValue) e.preventValue();
+    return false;
+  });
+</script>

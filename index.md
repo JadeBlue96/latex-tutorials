@@ -11,8 +11,6 @@ Each section, shown on the left, will guide you through setting up a basic LaTeX
 
 The guides will have some interactive elements, so be prepared to dive straight in!
 
-There is some hierarchy to the guides, as shown in the diagram below. This is purely optional, but we do suggest you work through them in order.<p>
-
 As described in the <a href="{{ site.baseurl }}/about">About</a> page. we cater for absolute beginners in LaTeX, so the end result will be just enough for you to get started.
 
 For more in depth tutorials, visit the <a href="{{ site.baseurl }}/documentation">Documentation</a> pages, or any of the excellent <a href="{{ site.baseurl }}/documentation/resources">resources</a> elsewhere on the internet. This is particularly recommended if you already have some experience with LaTeX.
