@@ -2,7 +2,7 @@ name: "LaTeX Tutorials"
 markdown: kramdown 
 pygments: true
 
-baseurl: "/latex-tutorials"
+baseurl: "/"
 permalink: /:categories/:title
 
 include: [".htaccess"]
