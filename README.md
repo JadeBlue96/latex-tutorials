@@ -30,6 +30,7 @@ If you want to give extra tips, particularly if a more semantic symbol exists, t
 	title: "The Quadratic Equation"
 	base: practice
 	difficulty: beginner
+	author: # optional
 	tips:
 	  - Use \frac{}{} to create a fraction.
 	  - Use \sqrt{} (with curly braces) to place muliple items under the square-root symbol.
