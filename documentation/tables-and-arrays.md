@@ -100,6 +100,6 @@ You will probably want to put brackets around the array to make it look like a m
 \right)
 {% endhighlight %}
 
-The `\left(` and `\right)` command are extremely useful. They are used to stretch ordinary brackets to fit around what ever is inside them. Use them when dealing with fractions and other large (or rather tall) equations. You can use the `\left` and `\right` commands on other types of brackets; such as `\left{ right}` or `\left[ right]`.
+The `\left(` and `\right)` command are extremely useful. They are used to stretch ordinary brackets to fit around what ever is inside them. Use them when dealing with fractions and other large (or rather tall) equations. You can use the `\left` and `\right` commands on other types of brackets; such as `\left{ \right}` or `\left[ \right]`.
 
 Alternatively, you can experiment with the `matrix` or `pmatrix` packages which provide extra features, saving you work. For more information, read the [Matrices and Arrays](http://en.wikibooks.org/wiki/LaTeX/Mathematics#Matrices_and_arrays) section in the LaTeX Wikibook.
