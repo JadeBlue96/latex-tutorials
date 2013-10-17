@@ -26,6 +26,7 @@ layout: practice
 title: "$TITLE"
 base: practice
 difficulty: $FILEDIR
+author: # optional
 ---
 
 \$\$  \$\$
