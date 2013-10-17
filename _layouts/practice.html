@@ -44,7 +44,7 @@
 <script type="text/javascript">
   var eqns = [];
   {% for pg in site.pages %}
-    {% if page.difficulty == pg.difficulty %} eqns.push("{{ pg.url | remove: '.html' }}"); {% endif %}
+    {% if page.difficulty == pg.difficulty and page.url != pg.url %} eqns.push("{{ pg.url | remove: '.html' }}"); {% endif %}
   {% endfor %}
 
   practice.init(eqns,"{{ site.baseurl }}");
