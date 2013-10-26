@@ -8,3 +8,4 @@ permalink: pretty
 include: [".htaccess"]
 exclude: ["README.md","deploy","neweqn"]
 
+plugins: _plugins
