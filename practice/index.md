@@ -11,27 +11,6 @@ On each page, you will be presented with an equation or formula. You simply have
 
 Purposefully, we do not provide many tips on what symbols and commands you should use. We thoroughly encourage experimenting, or looking in online documents. Head over to the [Resources]({{ site.baseurl }}/documentation/resources) for some helpful links.
 
-{% assign bnum = '0' %}
-{% assign inum = '0' %}
-{% assign anum = '0' %}
-{% for page in site.pages %}
-  {% if page.difficulty == 'beginner' %} 
-  	{% capture bnum %}{{ bnum | plus: '1' }}{% endcapture %} 
-  {% endif %}
-  {% if page.difficulty == 'intermediate' %} 
-  	{% capture inum %}{{ inum | plus: '1' }}{% endcapture %} 
-  {% endif %}
-  {% if page.difficulty == 'advanced' %} 
-  	{% capture anum %}{{ anum | plus: '1' }}{% endcapture %} 
-  {% endif %}
-{% endfor %}
-
-Currently there are
-
-- {{ bnum }} beginner equations
-- {{ inum }} intermediate equations
-- {{ anum }} advanced equations
-
 Simply choose your level to get started. All equations will appear in a random order. Come back to this page to select another category. 
 
 Have fun!
