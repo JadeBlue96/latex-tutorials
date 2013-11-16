@@ -78,7 +78,7 @@
       MathJax.Hub.Queue(["Typeset",MathJax.Hub,latex_output]);
 
       e.returnValue = false;
-      if(e.preventValue) e.preventValue();
+      if(e.preventDefault) e.preventDefault();
       return false;
     });
 
@@ -87,7 +87,7 @@
       latex_answer.style.height = (latex_answer.scrollHeight)+'px';
 
       e.returnValue = false;
-      if(e.preventValue) e.preventValue();
+      if(e.preventDefault) e.preventDefault();
       return false;
     });
 
@@ -95,7 +95,7 @@
       window.location = baseurl + eqns[Math.floor(Math.random() * eqns.length)];
 
       e.returnValue = false;
-      if(e.preventValue) e.preventValue();
+      if(e.preventDefault) e.preventDefault();
       return false;
     });
   }
